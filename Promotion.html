@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система повышения - Дыхание Змеи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                🐍 Назад к дыханию
+            </a>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container mt-5">
+        <!-- Заголовок -->
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-warning">⚔️ Система повышения</h1>
+            <p class="lead">Путь от начинающего истребителя до Цугуко</p>
+        </header>
+
+        <!-- Общая информация -->
+        <section class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white text-center">
+                    <div class="card-body">
+                        <h3>🕒 Время повышения</h3>
+                        <p class="mb-1">Младший состав: <span class="text-info">3 дня</span></p>
+                        <p class="mb-1">Средний состав: <span class="text-warning">4 дня</span></p>
+                        <p class="mb-0">Старший состав: <span class="text-danger">5 дней</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h3>📋 Условия повышения</h3>
+                        <p>
+                            Каждый ранг требует выполнения определенных заданий и демонстрации роста навыков.
+                            Время от подачи заявки до получения нового звания зависит от состава.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Младший состав -->
+        <section class="mb-5">
+            <h2 class="text-info mb-4">🎯 Младший состав (КД: 3 дня)</h2>
+
+            <!-- Мидузното → Мидзуноэ -->
+            <div class="card bg-dark text-white mb-4 rank-miduznoto">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Мидузното → Мидзуноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Выполнить поручение от инструктора</li>
+                        <li>Убийство 3 демонов</li>
+                        <li>Участие в 1 тренировке</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Мидзуноэ → Каното -->
+            <div class="card bg-dark text-white mb-4 rank-midzunoe">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Мидзуноэ → Каното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Убийство 5 демонов</li>
+                        <li>Участие в 2 тренировках</li>
+                        <li>Выполнить 1 поручение от Цугуко/Инструктора</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Каното → Каноэ -->
+            <div class="card bg-dark text-white mb-4 rank-kanoto">
+                <div class="card-header bg-info">
+                    <h4 class="mb-0">Каното → Каноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Отработай свои удары (15 рп действий)</li>
+                        <li>Убийство 7 демонов</li>
+                        <li>Участие в 2 тренировках</li>
+                        <li>Пройти проверку устава у Цугуко/Инструктора</li>
+                        <li>Выполнить 1 поручение от Цугуко/инструктора</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Средний состав -->
+        <section class="mb-5">
+            <h2 class="text-warning mb-4">🔥 Средний состав (КД: 4 дня)</h2>
+
+            <!-- Каноэ → Цучиното -->
+            <div class="card bg-dark text-white mb-4 rank-kanoe">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Каноэ → Цучиното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Вызови истребителя на дуэль и победи</li>
+                        <li>Убийство 10 демонов</li>
+                        <li>Участие в 2 тренировках</li>
+                        <li>Выполнить 2 поручения от Цугуко/Инструктора</li>
+                        <li>Участие в 1 рп событии</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Цучиното → Цучиноэ -->
+            <div class="card bg-dark text-white mb-4 rank-tsuchinoto">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Цучиното → Цучиноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Убийство 10 демонов</li>
+                        <li>Провести спаринг с Цугуко/инструктором</li>
+                        <li>Выполнить 3 поручения от Цугуко/Инструктора</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Цучиноэ → Хиното -->
+            <div class="card bg-dark text-white mb-4 rank-tsuchinoe">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Цучиноэ → Хиното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Выполнить задание от члена поместья бабочки</li>
+                        <li>Убийство 15 демонов</li>
+                        <li>Выполнить личное задание от любого из столпов</li>
+                        <li>Участие в 2 рп событиях</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Хиното → Хиноэ -->
+            <div class="card bg-dark text-white mb-4 rank-hinoto">
+                <div class="card-header bg-warning">
+                    <h4 class="mb-0">Хиното → Хиноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Участие в 3 рп событиях</li>
+                        <li>Победи в дуэли Цугуко/инструктора</li>
+                        <li>Получи одобрение от своего столпа на повышение</li>
+                        <li>Пройди полное обследование в поместье бабочки</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Старший состав -->
+        <section class="mb-5">
+            <h2 class="text-danger mb-4">💎 Старший состав (КД: 5 дней)</h2>
+
+            <!-- Хиноэ → Киното -->
+            <div class="card bg-dark text-white mb-4 rank-hinoe">
+                <div class="card-header bg-danger">
+                    <h4 class="mb-0">Хиноэ → Киното</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Участие в 4 рп событиях</li>
+                        <li>Брось вызов на дуэль Цугуко любого дыхания</li>
+                        <li>Убить 2 низшие луны или 20 демонов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Киното → Киноэ -->
+            <div class="card bg-dark text-white mb-4 rank-kinoto">
+                <div class="card-header bg-danger">
+                    <h4 class="mb-0">Киното → Киноэ</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Участие в 5 рп событиях</li>
+                        <li>Убить 30 демонов</li>
+                        <li>Брось вызов на дуэль 2 столпам</li>
+                        <li>Получи одобрение от своего столпа на повышение</li>
+                        <li>Выполни поручение от 2 столпов</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Киноэ → Цугуко -->
+            <div class="card bg-dark text-white rank-kinoue">
+                <div class="card-header bg-purple">
+                    <h4 class="mb-0">Киноэ → Цугуко</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="requirement-list">
+                        <li>Пройти тест на знание устава у Обаная</li>
+                        <li>Победить Обаная в мечане</li>
+                        <li>Патруль всех деревень</li>
+                        <li>Убить высшую луну</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">🐍 Дыхание Змеи - Путь становления истребителем</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
