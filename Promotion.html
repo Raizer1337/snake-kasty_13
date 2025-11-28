@@ -49,7 +49,7 @@
         .card-header {
             background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
             border-bottom: 2px solid #8b5cf6;
-            color: white;
+            color: white !important; /* Белый текст в заголовках */
             font-weight: bold;
             font-size: 1.3em;
             padding: 20px;
@@ -86,10 +86,10 @@
         .requirement-list li {
             padding: 12px 0;
             border-bottom: 1px solid #4a5568;
-            color: #f1f5f9 !important; /* Улучшенная контрастность */
+            color: #f1f5f9 !important; /* Белый текст для лучшей контрастности */
             font-size: 1.05em;
             line-height: 1.6;
-            background: rgba(255, 255, 255, 0.05); /* Легкий фон для лучшей читаемости */
+            background: rgba(255, 255, 255, 0.05);
             margin: 5px 0;
             padding: 12px 15px;
             border-radius: 8px;
@@ -120,9 +120,18 @@
         .text-warning { color: #f59e0b !important; }
         .text-danger { color: #ef4444 !important; }
         
-        .bg-info { background: #3b82f6 !important; }
-        .bg-warning { background: #f59e0b !important; }
-        .bg-danger { background: #ef4444 !important; }
+        .bg-info { 
+            background: #3b82f6 !important; 
+            color: white !important; /* Белый текст на синем фоне */
+        }
+        .bg-warning { 
+            background: #f59e0b !important; 
+            color: black !important; /* Черный текст на оранжевом фоне */
+        }
+        .bg-danger { 
+            background: #ef4444 !important; 
+            color: white !important; /* Белый текст на красном фоне */
+        }
         
         footer {
             background: #1a1a2e;
@@ -179,6 +188,13 @@
             background: linear-gradient(90deg, #7c3aed, #f59e0b, #7c3aed);
             margin: 40px 0;
             border-radius: 2px;
+        }
+        
+        /* Исправление для заголовков карточек в среднем составе */
+        .card-header h4 {
+            color: #000000 !important; /* Черный текст для оранжевого фона */
+            margin: 0;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -391,7 +407,7 @@
                     <ul class="requirement-list">
                         <li>Участие в 4 рп событиях</li>
                         <li>Брось вызов на дуэль Цугуко любого дыхания</li>
-                        <li>Убить 20 демонов</li>
+                        <li>Убить 2 низшие луны или 20 демонов</li>
                     </ul>
                 </div>
             </div>
@@ -415,7 +431,7 @@
             <!-- Киноэ → Цугуко -->
             <div class="card rank-kinoue">
                 <div class="card-header" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
-                    <h4 class="mb-0">Киноэ → Цугуко</h4>
+                    <h4 class="mb-0" style="color: white !important;">Киноэ → Цугуко</h4>
                 </div>
                 <div class="card-body">
                     <ul class="requirement-list">
