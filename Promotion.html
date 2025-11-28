@@ -47,12 +47,10 @@
         }
         
         .card-header {
-            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-            border-bottom: 2px solid #8b5cf6;
-            color: white !important; /* Белый текст в заголовках */
             font-weight: bold;
             font-size: 1.3em;
             padding: 20px;
+            border-bottom: 2px solid;
         }
         
         .card-body {
@@ -66,6 +64,7 @@
             margin-bottom: 0;
         }
         
+        /* Цвета границ для разных составов */
         .rank-miduznoto { border-left: 6px solid #3b82f6; }
         .rank-midzunoe { border-left: 6px solid #60a5fa; }
         .rank-kanoto { border-left: 6px solid #38bdf8; }
@@ -86,7 +85,7 @@
         .requirement-list li {
             padding: 12px 0;
             border-bottom: 1px solid #4a5568;
-            color: #f1f5f9 !important; /* Белый текст для лучшей контрастности */
+            color: #f1f5f9 !important;
             font-size: 1.05em;
             line-height: 1.6;
             background: rgba(255, 255, 255, 0.05);
@@ -120,17 +119,29 @@
         .text-warning { color: #f59e0b !important; }
         .text-danger { color: #ef4444 !important; }
         
-        .bg-info { 
-            background: #3b82f6 !important; 
-            color: white !important; /* Белый текст на синем фоне */
+        /* Уникальные цвета для каждого состава */
+        .bg-mladshee { 
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%) !important; 
+            color: #e0f2fe !important;
+            border-bottom-color: #60a5fa !important;
         }
-        .bg-warning { 
-            background: #f59e0b !important; 
-            color: black !important; /* Черный текст на оранжевом фоне */
+        
+        .bg-srednee { 
+            background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important; 
+            color: #fffbeb !important;
+            border-bottom-color: #fbbf24 !important;
         }
-        .bg-danger { 
-            background: #ef4444 !important; 
-            color: white !important; /* Белый текст на красном фоне */
+        
+        .bg-starshee { 
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%) !important; 
+            color: #fef2f2 !important;
+            border-bottom-color: #fca5a5 !important;
+        }
+        
+        .bg-tsuguko { 
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important; 
+            color: #faf5ff !important;
+            border-bottom-color: #c4b5fd !important;
         }
         
         footer {
@@ -190,12 +201,10 @@
             border-radius: 2px;
         }
         
-        /* Исправление для заголовков карточек в среднем составе */
-        .card-header h4 {
-            color: #000000 !important; /* Черный текст для оранжевого фона */
-            margin: 0;
-            font-weight: bold;
-        }
+        /* Цвета для заголовков разделов */
+        .section-mladshee { color: #60a5fa !important; }
+        .section-srednee { color: #fbbf24 !important; }
+        .section-starshee { color: #f87171 !important; }
     </style>
 </head>
 <body>
@@ -249,7 +258,7 @@
         <!-- Раздел КВОТА -->
         <section class="mb-5">
             <div class="card">
-                <div class="card-header text-center">
+                <div class="card-header text-center bg-tsuguko">
                     <h2>⏰ КВОТА</h2>
                 </div>
                 <div class="card-body">
@@ -282,11 +291,11 @@
 
         <!-- Младший состав -->
         <section class="mb-5">
-            <h2 class="text-info mb-4">🎯 Младший состав (КД: 3 дня)</h2>
+            <h2 class="section-mladshee mb-4">🎯 Младший состав (КД: 3 дня)</h2>
 
             <!-- Мидузното → Мидзуноэ -->
             <div class="card mb-4 rank-miduznoto">
-                <div class="card-header bg-info">
+                <div class="card-header bg-mladshee">
                     <h4 class="mb-0">Мидузното → Мидзуноэ</h4>
                 </div>
                 <div class="card-body">
@@ -300,7 +309,7 @@
 
             <!-- Мидзуноэ → Каното -->
             <div class="card mb-4 rank-midzunoe">
-                <div class="card-header bg-info">
+                <div class="card-header bg-mladshee">
                     <h4 class="mb-0">Мидзуноэ → Каното</h4>
                 </div>
                 <div class="card-body">
@@ -314,7 +323,7 @@
 
             <!-- Каното → Каноэ -->
             <div class="card mb-4 rank-kanoto">
-                <div class="card-header bg-info">
+                <div class="card-header bg-mladshee">
                     <h4 class="mb-0">Каното → Каноэ</h4>
                 </div>
                 <div class="card-body">
@@ -331,11 +340,11 @@
 
         <!-- Средний состав -->
         <section class="mb-5">
-            <h2 class="text-warning mb-4">🔥 Средний состав (КД: 4 дня)</h2>
+            <h2 class="section-srednee mb-4">🔥 Средний состав (КД: 4 дня)</h2>
 
             <!-- Каноэ → Цучиното -->
             <div class="card mb-4 rank-kanoe">
-                <div class="card-header bg-warning">
+                <div class="card-header bg-srednee">
                     <h4 class="mb-0">Каноэ → Цучиното</h4>
                 </div>
                 <div class="card-body">
@@ -351,7 +360,7 @@
 
             <!-- Цучиното → Цучиноэ -->
             <div class="card mb-4 rank-tsuchinoto">
-                <div class="card-header bg-warning">
+                <div class="card-header bg-srednee">
                     <h4 class="mb-0">Цучиното → Цучиноэ</h4>
                 </div>
                 <div class="card-body">
@@ -365,7 +374,7 @@
 
             <!-- Цучиноэ → Хиното -->
             <div class="card mb-4 rank-tsuchinoe">
-                <div class="card-header bg-warning">
+                <div class="card-header bg-srednee">
                     <h4 class="mb-0">Цучиноэ → Хиното</h4>
                 </div>
                 <div class="card-body">
@@ -380,7 +389,7 @@
 
             <!-- Хиното → Хиноэ -->
             <div class="card mb-4 rank-hinoto">
-                <div class="card-header bg-warning">
+                <div class="card-header bg-srednee">
                     <h4 class="mb-0">Хиното → Хиноэ</h4>
                 </div>
                 <div class="card-body">
@@ -396,11 +405,11 @@
 
         <!-- Старший состав -->
         <section class="mb-5">
-            <h2 class="text-danger mb-4">💎 Старший состав (КД: 5 дней)</h2>
+            <h2 class="section-starshee mb-4">💎 Старший состав (КД: 5 дней)</h2>
 
             <!-- Хиноэ → Киното -->
             <div class="card mb-4 rank-hinoe">
-                <div class="card-header bg-danger">
+                <div class="card-header bg-starshee">
                     <h4 class="mb-0">Хиноэ → Киното</h4>
                 </div>
                 <div class="card-body">
@@ -414,7 +423,7 @@
 
             <!-- Киното → Киноэ -->
             <div class="card mb-4 rank-kinoto">
-                <div class="card-header bg-danger">
+                <div class="card-header bg-starshee">
                     <h4 class="mb-0">Киното → Киноэ</h4>
                 </div>
                 <div class="card-body">
@@ -430,8 +439,8 @@
 
             <!-- Киноэ → Цугуко -->
             <div class="card rank-kinoue">
-                <div class="card-header" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
-                    <h4 class="mb-0" style="color: white !important;">Киноэ → Цугуко</h4>
+                <div class="card-header bg-tsuguko">
+                    <h4 class="mb-0">Киноэ → Цугуко</h4>
                 </div>
                 <div class="card-body">
                     <ul class="requirement-list">
