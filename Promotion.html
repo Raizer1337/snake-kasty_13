@@ -86,9 +86,13 @@
         .requirement-list li {
             padding: 12px 0;
             border-bottom: 1px solid #4a5568;
-            color: #e2e8f0 !important;
+            color: #f1f5f9 !important; /* Улучшенная контрастность */
             font-size: 1.05em;
             line-height: 1.6;
+            background: rgba(255, 255, 255, 0.05); /* Легкий фон для лучшей читаемости */
+            margin: 5px 0;
+            padding: 12px 15px;
+            border-radius: 8px;
         }
         
         .requirement-list li:last-child {
@@ -99,6 +103,7 @@
             content: "🐍 ";
             margin-right: 10px;
             color: #f59e0b;
+            font-weight: bold;
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -132,6 +137,48 @@
         /* Улучшенная контрастность */
         p, span, div {
             color: #e2e8f0 !important;
+        }
+        
+        /* Стили для раздела КВОТА */
+        .quota-section {
+            background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3a 100%);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 2px solid #7c3aed;
+        }
+        
+        .quota-item {
+            background: rgba(124, 58, 237, 0.1);
+            padding: 15px 20px;
+            margin: 12px 0;
+            border-radius: 10px;
+            border-left: 4px solid #7c3aed;
+            transition: all 0.3s ease;
+        }
+        
+        .quota-item:hover {
+            background: rgba(124, 58, 237, 0.2);
+            transform: translateX(5px);
+        }
+        
+        .quota-rank {
+            color: #f59e0b;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .quota-time {
+            color: #60a5fa;
+            font-size: 1em;
+        }
+        
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #7c3aed, #f59e0b, #7c3aed);
+            margin: 40px 0;
+            border-radius: 2px;
         }
     </style>
 </head>
@@ -182,6 +229,40 @@
                 </div>
             </div>
         </section>
+
+        <!-- Раздел КВОТА -->
+        <section class="mb-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>⏰ КВОТА</h2>
+                </div>
+                <div class="card-body">
+                    <div class="quota-section">
+                        <div class="quota-item">
+                            <div class="quota-rank">Ученик</div>
+                            <div class="quota-time">45 минут в прайм тайм</div>
+                        </div>
+                        
+                        <div class="quota-item">
+                            <div class="quota-rank">Истребитель</div>
+                            <div class="quota-time">45 минут в прайм тайм</div>
+                        </div>
+                        
+                        <div class="quota-item">
+                            <div class="quota-rank">Инструктора</div>
+                            <div class="quota-time">Квота в категории Инструкторов</div>
+                        </div>
+                        
+                        <div class="quota-item">
+                            <div class="quota-rank">Цугуко</div>
+                            <div class="quota-time">90 минут в прайм тайм</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
 
         <!-- Младший состав -->
         <section class="mb-5">
@@ -310,7 +391,7 @@
                     <ul class="requirement-list">
                         <li>Участие в 4 рп событиях</li>
                         <li>Брось вызов на дуэль Цугуко любого дыхания</li>
-                        <li>Убить 2 низшие луны или 20 демонов</li>
+                        <li>Убить 20 демонов</li>
                     </ul>
                 </div>
             </div>
