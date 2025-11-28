@@ -1,3 +1,77 @@
+/* Основные стили */
+body {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Навигация */
+.navbar {
+    background: linear-gradient(90deg, #2d0c5f 0%, #4a1e8c 100%) !important;
+    border-bottom: 2px solid #8b5cf6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #f59e0b !important;
+}
+
+/* Карточки */
+.card {
+    background: rgba(30, 30, 46, 0.9);
+    border: 1px solid #4c1d95;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #7c3aed !important;
+    border-bottom: 1px solid #8b5cf6;
+    font-weight: bold;
+}
+
+/* Цвета для рангов */
+.rank-miduznoto { border-left: 4px solid #3b82f6; }
+.rank-midzunoe { border-left: 4px solid #60a5fa; }
+.rank-kanoto { border-left: 4px solid #38bdf8; }
+.rank-kanoe { border-left: 4px solid #22d3ee; }
+.rank-tsuchinoto { border-left: 4px solid #f59e0b; }
+.rank-tsuchinoe { border-left: 4px solid #fbbf24; }
+.rank-hinoto { border-left: 4px solid #f97316; }
+.rank-hinoe { border-left: 4px solid #ea580c; }
+.rank-kinoto { border-left: 4px solid #dc2626; }
+.rank-kinoue { border-left: 4px solid #b91c1c; }
+
+/* Кнопки */
+.btn-warning {
+    background: #f59e0b;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Списки требований */
+.requirement-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.requirement-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #374151;
+}
+
+.requirement-list li:last-child {
+    border-bottom: none;
+}
+
+.requirement-list li::before {
+    content: "🐍 ";
+    margin-right: 8px;
+}
+
 /* Стили для форм дыхания */
 .breathing-style {
     background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
@@ -10,10 +84,10 @@
     transition: all 0.3s ease;
 }
 
-    .breathing-style:hover {
-        transform: translateX(5px);
-        box-shadow: 0 6px 12px rgba(124, 58, 237, 0.4);
-    }
+.breathing-style:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(124, 58, 237, 0.4);
+}
 
 .style-title {
     color: #f59e0b;
@@ -32,15 +106,24 @@
 
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
     .breathing-style {
         padding: 15px;
     }
-
+    
     .style-title {
         font-size: 1.1em;
     }
 }
-/* Исправление цветов для Promotion.html */
+
+/* НОВЫЕ СТИЛИ ДЛЯ PROMOTION - РЕШЕНИЕ ПРОБЛЕМЫ КЭША */
 .bg-srednee { 
     background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%) !important; 
     color: #000000 !important;
@@ -69,3 +152,44 @@
 .section-srednee { color: #fbbf24 !important; }
 .section-starshee { color: #f87171 !important; }
 
+/* Стили для раздела КВОТА */
+.quota-section {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3a 100%);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 2px solid #7c3aed;
+}
+
+.quota-item {
+    background: rgba(124, 58, 237, 0.1);
+    padding: 15px 20px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border-left: 4px solid #7c3aed;
+    transition: all 0.3s ease;
+}
+
+.quota-item:hover {
+    background: rgba(124, 58, 237, 0.2);
+    transform: translateX(5px);
+}
+
+.quota-rank {
+    color: #f59e0b;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.quota-time {
+    color: #60a5fa;
+    font-size: 1em;
+}
+
+.section-divider {
+    height: 3px;
+    background: linear-gradient(90deg, #7c3aed, #f59e0b, #7c3aed);
+    margin: 40px 0;
+    border-radius: 2px;
+}
